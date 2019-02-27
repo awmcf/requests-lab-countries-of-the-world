@@ -13,7 +13,6 @@ RequestHelper.prototype.get = function (onComplete) {
     const jsonString = xhr.responseText
     const data = JSON.parse(jsonString);
 
-    console.log(data);
     onComplete(data);
   });
   xhr.send();
